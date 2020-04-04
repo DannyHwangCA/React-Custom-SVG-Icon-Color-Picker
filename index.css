@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+  
+.outer-icon-container {
+    width: 100%;
+}
+  
+.inner-icon-container {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+  
+.custom-icon {
+    font-size: 400px;
+    color: pink
+}
