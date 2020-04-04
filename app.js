@@ -25,9 +25,11 @@
       }
       
       return (
-        <div className="outer-icon-container">
-          <div className="inner-icon-container">
-            <ColorWell inputvalue={color} handleColorChange={handleColorChange}/>
+        <div className="outer-icon-container" style={{backgroundColor: color }}>
+          <div className="dark-overlay">
+            <div className="inner-icon-container">
+              <ColorWell inputvalue={color} handleColorChange={handleColorChange}/>
+            </div>
           </div>
         </div>
       );
