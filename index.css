@@ -15,5 +15,12 @@
   
 .custom-icon {
     font-size: 400px;
-    color: pink
+    color: #ffadff;
+}
+  
+.color-input {
+    width: 50%;
+    height: 50px;
+    border-radius: 5px;
+    padding: 5px 10px;
 }
