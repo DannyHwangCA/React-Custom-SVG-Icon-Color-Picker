@@ -1,11 +1,22 @@
 (function() {
     "use strict";
     
-    var customizer = React.createElement(
-      'div', 
-      { className: "customizer" },
-      "Test"
+function Icon(props) {
+    return (
+    <i class='fas fa-heartbeat'></i>
+    ) 
+}
+
+function IconCustomizer(props) {
+    return (
+    <div className="outer-icon-container">
+        <div className="inner-icon-container">
+        <Icon />
+        </div>
+    </div>
     )
-    
-    ReactDOM.render(customizer, document.getElementById('app'));
+}
+
+ReactDOM.render(<IconCustomizer />, document.getElementById('app'));
 })();
+  
