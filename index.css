@@ -1,26 +1,30 @@
 * {
     box-sizing: border-box;
-}
+  }
   
-.outer-icon-container {
+  .outer-icon-container {
     width: 100%;
-}
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   
-.inner-icon-container {
+  .inner-icon-container {
     width: 100%;
     max-width: 1200px;
     text-align: center;
     margin: 0 auto;
-}
+  }
   
-.custom-icon {
-    font-size: 400px;
+  .custom-icon {
+    font-size: 20em;
     color: #ffadff;
-}
+  }
   
-.color-input {
+  .color-input {
     width: 50%;
     height: 50px;
     border-radius: 5px;
     padding: 5px 10px;
-}
+  }

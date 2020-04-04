@@ -1,31 +1,27 @@
 (function() {
     "use strict";
     
-    function Icon(props) {
-      return (
-        <i class='custom-icon fas fa-heartbeat'></i>
-      );
-    }
-    
     function ColorWell(props) {
       return (
         <div className="color-input-container">
-          <input class="color-input" type="color" value="#ffadff" />
+          <i class='custom-icon fas fa-heartbeat' style={{color: props.inputvalue}}></i>
+          <p>
+            <b>Color Choice</b>
+          </p>
+          <input class="color-input" type="color" value={props.inputvalue} />
         </div>
       );
     }
-    
+  
     function IconCustomizer(props) {
       return (
         <div className="outer-icon-container">
           <div className="inner-icon-container">
-            <Icon />
-            <ColorWell />
+            <ColorWell inputvalue="#ffadff"/>
           </div>
         </div>
       );
     }
     
-    ReactDOM.render(<IconCustomizer />, document.getElementById('app'));
-})();
-  
+  ReactDOM.render(<IconCustomizer />, document.getElementById('app'));
+  })();
